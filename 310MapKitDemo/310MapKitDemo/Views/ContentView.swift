@@ -10,7 +10,6 @@ import MapKit
 struct ContentView: View {
     @StateObject private var locationManager = LocationManager()
     
-    // Use MapCameraPosition if you prefer SwiftUI’s new approach
     @State private var position: MapCameraPosition = .automatic
 
     @State private var pinLocations: [MapPin] = []
@@ -33,7 +32,6 @@ struct ContentView: View {
             )
             .onChange(of: locationManager.userLocation) { newLocation in
                 guard let location = newLocation else { return }
-                // Zoom in on the user’s location
                 position = .camera(MapCamera(centerCoordinate: location.coordinate, distance: 1000))
             }
             .frame(height: 400)
@@ -50,7 +48,6 @@ struct ContentView: View {
                         set: { pinLocations[index].description = $0 }
                     ),
                     onSave: {
-                        // Force UI update by reassigning the pin
                         pinLocations[index] = MapPin(
                             coordinate: pinLocations[index].coordinate,
                             title: pinLocations[index].title,

@@ -15,7 +15,7 @@ struct MapPin: Identifiable, Hashable {
     var description: String
 
     static func == (lhs: MapPin, rhs: MapPin) -> Bool {
-        return lhs.id == rhs.id // ✅ Ensure equality is based on ID
+        return lhs.id == rhs.id
     }
     
     // Hashing function to allow usage in ForEach
