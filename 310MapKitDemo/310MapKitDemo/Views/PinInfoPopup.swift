@@ -7,10 +7,12 @@
 
 import SwiftUI
 
+// Popup form
 struct PinInfoPopup: View {
     @Binding var title: String
     @Binding var description: String
     
+    // Closure that is executed when the user taps the Save button.
     var onSave: () -> Void
     
     var body: some View {
@@ -19,6 +21,7 @@ struct PinInfoPopup: View {
                 TextField("Title", text: $title)
                 TextField("Description", text: $description)
                 
+                // Button that triggers the onSave closure to persist changes.
                 Button("Save") {
                     onSave()
                 }
