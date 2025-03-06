@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1375A4712D6FBD2C007DCF83 /* _10MapKitDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375A4702D6FBD2C007DCF83 /* _10MapKitDemoApp.swift */; };
-		1375A4732D6FBD2D007DCF83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375A4722D6FBD2D007DCF83 /* ContentView.swift */; };
 		1375A4752D6FBD2E007DCF83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1375A4742D6FBD2E007DCF83 /* Assets.xcassets */; };
 		1375A4782D6FBD2E007DCF83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1375A4772D6FBD2E007DCF83 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,10 +15,15 @@
 /* Begin PBXFileReference section */
 		1375A46D2D6FBD2C007DCF83 /* 310MapKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 310MapKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1375A4702D6FBD2C007DCF83 /* _10MapKitDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _10MapKitDemoApp.swift; sourceTree = "<group>"; };
-		1375A4722D6FBD2D007DCF83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1375A4742D6FBD2E007DCF83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1375A4772D6FBD2E007DCF83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		72B3E4832D793D88004F9A80 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+		72B3E4852D793DAD004F9A80 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+		72B3E48A2D793DF1004F9A80 /* Components */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Components; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1375A46A2D6FBD2C007DCF83 /* Frameworks */ = {
@@ -52,9 +56,11 @@
 			isa = PBXGroup;
 			children = (
 				1375A4702D6FBD2C007DCF83 /* _10MapKitDemoApp.swift */,
-				1375A4722D6FBD2D007DCF83 /* ContentView.swift */,
+				72B3E4832D793D88004F9A80 /* Views */,
 				1375A4742D6FBD2E007DCF83 /* Assets.xcassets */,
 				1375A4762D6FBD2E007DCF83 /* Preview Content */,
+				72B3E4852D793DAD004F9A80 /* Models */,
+				72B3E48A2D793DF1004F9A80 /* Components */,
 			);
 			path = 310MapKitDemo;
 			sourceTree = "<group>";
@@ -81,6 +87,11 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				72B3E4832D793D88004F9A80 /* Views */,
+				72B3E4852D793DAD004F9A80 /* Models */,
+				72B3E48A2D793DF1004F9A80 /* Components */,
 			);
 			name = 310MapKitDemo;
 			productName = 310MapKitDemo;
@@ -137,7 +148,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1375A4732D6FBD2D007DCF83 /* ContentView.swift in Sources */,
 				1375A4712D6FBD2C007DCF83 /* _10MapKitDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +282,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"310MapKitDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = A2MDLMSGQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Our app needs location services to function.";
@@ -285,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mae.-10MapKitDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mae.Alin10MapKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -301,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"310MapKitDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = A2MDLMSGQK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Our app needs location services to function.";
@@ -314,7 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mae.-10MapKitDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mae.Alin10MapKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
